@@ -9,6 +9,6 @@
     "test": "echo \"No tests configured for @cgw/jobs yet\""
   },
   "devDependencies": {
-    "tsx": "latest"
+    "tsx": "4.20.3"
   }
 }

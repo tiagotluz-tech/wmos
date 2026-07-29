@@ -9,19 +9,19 @@
     "test": "echo \"No tests configured for @cgw/api yet\""
   },
   "dependencies": {
-    "@nestjs/common": "latest",
-    "@nestjs/config": "latest",
-    "@nestjs/core": "latest",
-    "@nestjs/platform-express": "latest",
-    "@nestjs/swagger": "latest",
-    "reflect-metadata": "latest",
-    "rxjs": "latest",
-    "swagger-ui-express": "latest",
-    "@prisma/client": "latest"
+    "@nestjs/common": "11.1.28",
+    "@nestjs/config": "4.0.2",
+    "@nestjs/core": "11.1.28",
+    "@nestjs/platform-express": "11.1.28",
+    "@nestjs/swagger": "11.4.6",
+    "@prisma/client": "7.9.1",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "swagger-ui-express": "5.0.1"
   },
   "devDependencies": {
-    "@nestjs/cli": "latest",
-    "@types/express": "latest",
-    "@types/swagger-ui-express": "latest"
+    "@nestjs/cli": "11.0.10",
+    "@types/express": "5.0.3",
+    "@types/swagger-ui-express": "4.1.8"
   }
 }
