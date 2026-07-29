@@ -1,0 +1,27 @@
+{
+  "name": "@cgw/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "lint": "eslint src --ext .ts",
+    "test": "echo \"No tests configured for @cgw/api yet\""
+  },
+  "dependencies": {
+    "@nestjs/common": "latest",
+    "@nestjs/config": "latest",
+    "@nestjs/core": "latest",
+    "@nestjs/platform-express": "latest",
+    "@nestjs/swagger": "latest",
+    "reflect-metadata": "latest",
+    "rxjs": "latest",
+    "swagger-ui-express": "latest",
+    "@prisma/client": "latest"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "latest",
+    "@types/express": "latest",
+    "@types/swagger-ui-express": "latest"
+  }
+}
