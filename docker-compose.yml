@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: cgw-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cgw
+      POSTGRES_USER: cgw
+      POSTGRES_PASSWORD: cgw
+    ports:
+      - "5432:5432"
+    volumes:
+      - cgw-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cgw -d cgw"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  cgw-postgres-data:
