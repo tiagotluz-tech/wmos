@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@cgw/domain": ["packages/domain/src"],
+      "@cgw/application": ["packages/application/src"],
+      "@cgw/infrastructure": ["packages/infrastructure/src"],
+      "@cgw/shared": ["packages/shared/src"],
+      "@cgw/ui": ["packages/ui/src"],
+      "@cgw/config": ["packages/config/src"]
+    }
+  }
+}
