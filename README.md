@@ -91,10 +91,26 @@ O projeto utiliza um monorepo com Turborepo e pnpm Workspace. A arquitetura sepa
    ```
 
 4. Acesse os serviços:
-
    - Web: <http://localhost:3000>
    - API health check: <http://localhost:3001/health>
    - Swagger: <http://localhost:3001/docs>
+
+## Autenticação e autorização — Sprint 1A
+
+A Sprint 1A adiciona a base de autenticação e autorização sem credenciais reais do Microsoft Entra ID:
+
+- API com módulos `auth`, `users`, `roles`, `permissions` e `audit`.
+- Endpoint autenticado `GET /me` usando autenticação mockada.
+- Guards `JwtGuard`, `AuthGuard`, `RolesGuard` e decorators `@Roles()` / `@Permissions()`.
+- Middleware de autenticação e interceptor de auditoria.
+- Frontend com `/login`, layout autenticado, sidebar, header, avatar e logout usando `MockAuthProvider`.
+- Prisma com usuários, papéis, permissões, relacionamentos e logs de auditoria.
+
+Para chamadas locais na API durante esta sprint, use o header:
+
+```bash
+Authorization: Bearer mock-admin-token
+```
 
 ## Scripts
 

@@ -10,6 +10,7 @@ async function bootstrap() {
     .setTitle('Centro de Governança Wittel API')
     .setDescription('API corporativa do Centro de Governança Wittel (CGW).')
     .setVersion('0.1')
+    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('docs', app, document);
